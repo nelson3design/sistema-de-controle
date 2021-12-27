@@ -86,7 +86,7 @@ width: 300px;
 /* menu */
 .menu-content {
 	width: 250px;
-	height: 100vh;
+	height: calc(100vh - 100px);
 	background-color: white;
 	display: flex;
 	flex-direction: column;
