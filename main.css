@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+* {
+	font-family: 'Poppins', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	background-color: #333;
+	height: 100vh;
+	padding-top: 30px;
+	position: relative;
+}
+
+.nav {
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	display: grid;
+	place-items: center;
+}
+
+.nav h2 {
+	font-size: 50px;
+	color: black;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.form {
+	width: 100%;
+	height: auto;
+	display: grid;
+	place-items: center;
+}
+
+.login-text {
+	/* width: 100%; */
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 20px;
+	font-size: 40px;
+	color: white;
+	font-weight: 400;
+}
+
+.user {
+	width: 300px;
+	height: 25px;
+	border: none;
+	background-color: white;
+	display: block;
+	padding-left: 10px;
+		font-size: 12px;
+}
+
+.pass {
+width: 300px;
+	height: 25px;
+	border: none;
+	background-color: white;
+	display: block;
+	margin: 20px 0;
+	padding-left: 10px;
+	font-size: 12px;
+}
+.submit {
+	width: 310px;
+	height: 25px;
+	border: none;
+	background-color: #b2b0b0;
+	display: block;
+	color: white;
+	font-size: 16px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.submit:hover {
+	background-color: white;
+	color: black;
+}
+
+/* menu */
+.menu-content {
+	width: 250px;
+	height: 100vh;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 20;
+    position: relative;
+}
+
+.text-menu {
+	width: 90%;
+	height: 60px;
+	background-color: #333;
+	color: white;
+	display: grid;
+	place-items: center;
+	font-size: 25px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.menu-list {
+	width: 90%;
+	position: relative;
+}
+.pro {
+	width: 100%;
+	height: 30px;
+	background-color: #333;
+	color: white;
+	margin-top: 10px;
+	display: grid;
+	place-items: center;
+	position: relative;
+	list-style: none;
+	
+}
+
+.cat {
+	width: 100%;
+	height: 30px;
+	background-color: #333;
+	color: white;
+	margin-top: 10px;
+	display: grid;
+	place-items: center;
+	position: relative;
+	list-style: none;
+}
+
+.subcat {
+	width: 100%;
+	height: 30px;
+	background-color: #333;
+	color: white;
+	margin-top: 10px;
+	display: grid;
+	place-items: center;
+	position: relative;
+	list-style: none;
+}
+
+.marca {
+	width: 100%;
+	height: 30px;
+	background-color: #333;
+	color: white;
+	margin-top: 10px;
+	display: grid;
+	place-items: center;
+	position: relative;
+	list-style: none;
+}
+
+.sair {
+	width: 100%;
+	height: 30px;
+	background-color: rgb(146, 146, 146);
+	color: white;
+	margin-top: 50px;
+	display: grid;
+	place-items: center;
+	position: relative;
+	list-style: none;
+}
+.sair:hover{
+		background-color: white;
+		color: black;
+		border: 1px solid black;
+}
+
+.sair:hover a{
+		
+		color: black;
+		
+}
+.hover {
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+}
+
+.pro h4 {
+	font-size: 18px;
+	margin-right: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 2px;
+}
+
+.cat h4 {
+	font-size: 18px;
+	margin-right: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 2px;
+}
+.subcat h4 {
+	font-size: 18px;
+	margin-right: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 2px;
+}
+
+.marca h4 {
+	font-size: 18px;
+	margin-right: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 2px;
+}
+.sair a {
+	font-size: 18px;
+	color: white;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.pro i {
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+	font-size: 25px;
+	text-align: center;
+}
+.cat i {
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+	font-size: 25px;
+	text-align: center;
+}
+
+.subcat i {
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+	font-size: 25px;
+	text-align: center;
+}
+
+.marca i {
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+	font-size: 25px;
+	text-align: center;
+}
+.sub-menu {
+	width: 250px;
+	position: absolute;
+	left: 238px;
+	top: 10px;
+
+	display: none;
+}
+
+.sub-menu-2 {
+	width: 250px;
+	position: absolute;
+	left: 238px;
+	top: 50px;
+
+	display: none;
+}
+
+.sub-menu-3 {
+	width: 250px;
+	position: absolute;
+	left: 238px;
+	top: 80px;
+
+	display: none;
+}
+
+.sub-menu-4 {
+	width: 250px;
+	position: absolute;
+	left: 238px;
+	top: 130px;
+
+	display: none;
+}
+
+.show {
+	display: block;
+}
+.cadas {
+	width: 90%;
+	height: 30px;
+	background-color: #333;
+	color: white;
+	border: 2px solid white;
+	text-align: center;
+}
+
+.cadas a {
+	color: white;
+
+	text-align: center;
+	text-decoration: none;
+}
+.cadas:hover a,
+.cadas:hover {
+	background-color: white;
+	color: black;
+}
+
+.listar {
+	width: 90%;
+	height: 30px;
+	background-color: #333;
+	color: white;
+	border: 2px solid white;
+	text-align: center;
+	text-decoration: none;
+}
+
+.listar a {
+	color: white;
+
+	text-align: center;
+	text-decoration: none;
+}
+.listar:hover a,
+.listar:hover {
+	background-color: white;
+	color: black;
+}
+
+/* text-fundo */
+
+.text-fundo {
+	width: calc(100% - 250px);
+	height: calc(100% - 130px);
+    position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 130px;
+	display: grid;
+	place-items: center;
+	z-index: 2;
+}
+
+.text-fundo h2 {
+	font-size: 30px;
+	color: white;
+	font-weight: 500;
+}
+
+
+/* cadastrar-produtos */
+
+.form-cadas{
+    width: calc(100% - 250px);
+	height: calc(100% - 130px);
+    position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 130px;
+	display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+	gap: 20px;
+}
+.cadastrar-produto-title h2{
+	color: white;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.form-cadas form{
+    width: 300px;
+}
+
+.form-cadas form input{
+    display: block;
+    width: 286px;
+    height: 25px;
+	font-size: 12px;
+	  padding-left:10px;
+}
+
+.form-cadas form textarea{
+    display: block;
+    width: 288px;
+    height: 60px;
+	margin: 10px 0;
+	font-size: 12px;
+	  padding-left:10px;
+}
+
+.form-cadas form button{
+    display: block;
+    width: 300px;
+    height: 25px;
+	background-color: rgb(146, 146, 146);
+	border: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 16px;
+	cursor: pointer;
+}
+.form-cadas form button:hover{
+  
+	background-color: white;
+
+	color: rgb(0, 0, 0);
+
+}
+
+.valor-promo{
+	margin: 10px 0;
+}
+.arquivo{
+	margin-bottom: 7px;
+	background-color: white;
+	height: 25px!important;
+	width: 300px!important;
+	font-size: 12px;
+	  padding-left:0px!important;
+}
+
+
+form select {
+   -webkit-appearance:none;
+   -moz-appearance:none;
+   -ms-appearance:none;
+   appearance:none;
+   outline:0;
+   box-shadow:none;
+   border:0!important;
+   background: #ffffff;
+   background-image: none;
+   flex: 1;
+    padding-left:10px;
+   color:rgb(0, 0, 0);
+   cursor:pointer;
+   font-size: 12px;
+   width: 100%;
+}
+form select::-ms-expand {
+   display: none;
+}
+.select {
+   position: relative;
+   display: flex;
+  
+   height: 25px;
+   line-height: 3;
+   background: #5c6664;
+   overflow: hidden;
+   width: 300px!important;
+}
+.select::after {
+ content:"" ;
+   position: absolute;
+  
+   right: 0;
+   width: 20px;
+   height: 23px;
+ 
+ 
+   background: #333;
+   cursor:pointer;
+   pointer-events:none;
+   transition:.25s all ease;
+   bottom: 0px;
+
+   border: 1px solid rgb(255, 255, 255);
+   background-image: url('caret-2.png');
+   background-size: 80%;
+   background-repeat: no-repeat;
+ background-position-x: 2px;
+ background-position-y: 3px;
+}
+.select:hover::after {
+   content:"" ;
+   position: absolute;
+  
+   right: 0;
+   width: 20px;
+   height: 23px;
+ 
+ 
+   background: rgb(255, 255, 255);
+   cursor:pointer;
+   pointer-events:none;
+   transition:.25s all ease;
+   bottom: 0px;
+
+   border: 1px solid #333;
+   background-image: url('caret.png');
+   background-size: 80%;
+   background-repeat: no-repeat;
+ background-position-x: 2px;
+ background-position-y: 3px;
+}
+
+
+
+.select option {
+border: none;
+   color: white;
+    background: #333;
+
+}
+
+.select:nth-child(2) {
+margin: 10px 0;
+
+}
+
+.select:nth-child(3) {
+margin-bottom: 10px;
+
+}
+.situacao {
+margin: 10px 0;
+
+}
